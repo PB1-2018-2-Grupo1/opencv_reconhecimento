@@ -7,3 +7,14 @@ https://www.learnopencv.com/install-opencv3-on-ubuntu/
 Após a instalação efetue os teste propostos no site para o teste do ambiente.
 
 Reconhecimento Facial
+
+Instale o face_recognition do diretório https://github.com/PB1-2018-2-Grupo1/face_recognition
+
+instale o face_recognition no python2 pelo 
+
+  sudo pip2 install face_recognition 
+  
+
+ 
+ 
+
