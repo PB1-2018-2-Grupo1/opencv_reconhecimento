@@ -1,5 +1,6 @@
 import face_recognition
 import cv2
+import os
 
 # This is a demo of running face recognition on live video from your webcam. It's a little more complicated than the
 # other example, but it includes some basic performance tweaks to make things run a lot faster:
@@ -81,6 +82,8 @@ while True:
             if True in matches:
                 first_match_index = matches.index(True)
                 name = known_face_names[first_match_index]
+                command = "start cmd /K echo " + name
+                os.system(command)
 
             face_names.append(name)
 
@@ -102,6 +105,9 @@ while True:
         cv2.rectangle(frame, (left, bottom - 35), (right, bottom), (0, 0, 255), cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
         cv2.putText(frame, name, (left + 6, bottom - 6), font, 1.0, (255, 255, 255), 1)
+
+        #escrever nomes
+        print(name)
 
     # Display the resulting image
     cv2.imshow('Video', frame)
