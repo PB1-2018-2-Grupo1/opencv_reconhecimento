@@ -15,23 +15,23 @@ import os
 video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
-adriano_image = face_recognition.load_image_file("./grupo/adriano.jpeg")
+adriano_image = face_recognition.load_image_file("./Grupo/adriano.jpeg")
 adriano_face_encoding = face_recognition.face_encodings(adriano_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-joao_image = face_recognition.load_image_file("./grupo/joao.jpg")
+joao_image = face_recognition.load_image_file("./Grupo/joao.jpg")
 joao_face_encoding = face_recognition.face_encodings(joao_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-feio1_image = face_recognition.load_image_file("./grupo/feio1.jpg")
+feio1_image = face_recognition.load_image_file("./Grupo/feio1.jpg")
 feio1_face_encoding = face_recognition.face_encodings(feio1_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-feio2_image = face_recognition.load_image_file("./grupo/feio2.jpg")
+feio2_image = face_recognition.load_image_file("./Grupo/feio2.jpg")
 feio2_face_encoding = face_recognition.face_encodings(feio2_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-feio3_image = face_recognition.load_image_file("./grupo/feio3.jpg")
+feio3_image = face_recognition.load_image_file("./Grupo/feio3.jpg")
 feio3_face_encoding = face_recognition.face_encodings(feio3_image)[0]
 
 # Create arrays of known face encodings and their names
